@@ -1,11 +1,13 @@
 /* Color variables */
 :root {
+	font-size: 18px;
     --color-00: #ffffff;
 	--color-10: #e0e0e0;
 	--color-50: #666666;
 	--color-75: #333355;
     --color-90: #0a0a23;
-	font-size: 18px;
+    --danger-color: #b31818;
+    --danger-background: #c97d7b;
 }
 
 *, *::before, *::after {
@@ -90,11 +92,18 @@ button {
     border: 3px solid var(--color-10);
     font-size: 1.5rem;
     width: 90%;
-	height: 4.3rem;
+	min-height: 4.3rem;
     max-width: 530px;
 	line-height:2rem;
     margin-top: 1.5rem;
     padding: 15px;
     overflow-wrap: break-word;
     text-align: center;
+}
+
+.output.error {
+	color: var(--danger-color);
+	background-color: var(--danger-background);
+	border: 3px solid var(--danger-color);
+	font-size: 1.6rem;
 }
