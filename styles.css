@@ -71,4 +71,15 @@ input {
 	color: var(--color-00);
 	background-color: var(--color-90);
 	border: 1px solid var(--color-05);
-  }
+}
+
+button {
+	cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+    padding: 0.5rem 0.9rem;
+    font-size: 1.3rem;
+    width: 100%;
+}
