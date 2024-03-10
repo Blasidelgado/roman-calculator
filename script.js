@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         const MAX = {
             value: 3999,
-            text: 'lesser',
+            text: 'less',
         };
 
         if(userInput.value === '') {
