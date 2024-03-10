@@ -42,6 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
             text: 'lesser',
         };
 
+        if(userInput.value === '') {
+            output.innerText = 'Please enter a valid number';
+            return;
+        }
+
         const userInputValue = parseInt(userInput.value);
         if (userInputValue < MIN.value || userInputValue > MAX.value) {
             output.innerText = userInputValue < MIN.value ? 
@@ -50,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             output.classList.add('error');
             return;
         }
-        
+
         output.classList.remove('error');
         output.innerText = decimalToRoman(userInputValue);
     })
